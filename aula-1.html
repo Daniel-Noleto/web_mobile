@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Título da Página</title>
+
+   <script src="js/funcoes.js"></script>
+
 </head>
 <body>
     <h1> Primeiro Cabeçalho</h1>
@@ -48,7 +51,55 @@
     </tr>
 </table>
 
+<form action="*/cadastrar/*" method="post">
+
+    <label for="Login">Login</label>
+    <input type="text" name="Login" id="Login" placeholder="Digite seu usuário">
+
+    <label for="Senha">Senha</label>
+    <input type="password" name="Senha" id="Senha" placeholder="Digite sua senha">
+
+    <input type="radio" name="sexo" value="1" checked> Masculino
+    <input type="radio" name="sexo" value="2"> Feminino
+
+    <input type="checkbox" name="veiculos" value="bike">Eu tenho uma bike
+    <input type="checkbox" name="veiculos" value="carro">Eu tenho um carro
+
+    Curso:
+    <select name="curso">
+        <option value="1">Ciência da Computação</option>
+        <option value="2">Direito</option>
+        <option value="3">Engenharia Elétrica</option>
+        <option value="4">Medicina</option>
+    </select>
 
 
+    Mensagem: <textarea name="message" rows="18" cols="30"></textarea>
+
+    Idade: <input type="number" name="idade" min="0" max="100" step="1" value="30">
+    
+    Data de nascimento: <input type="date" name="data_nascimento">
+
+    Auto Complete: <input list="cheeses">
+    <datalist id="cheeses">
+        <option>Camembert</option>
+        <option>Cheddar</option>
+        <option>Chèvre</option>
+        <option>Cotija</option>
+        <option>Emmental</option>
+        <option>feda</option>
+        <option>Gouda</option>
+        <option>Manchego</option>
+    </datalist>
+
+    
+    <input type="hidden" name="country" value="Brasil">
+
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Enviar">
+
+    <button type="button" onclick="alert ('Hello World')"> Botão 01</button>
+    <button type="button" onclick="soma(3,5)">Soma</button>
+</form>
 </body>
 </html>
